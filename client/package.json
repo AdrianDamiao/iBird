@@ -1,0 +1,23 @@
+{
+  "name": "iBird",
+  "version": "1.0.0",
+  "description": "A aplicação permite ao usuário cadastrar e monitorar a saúde das suas aves.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianDamiao/iBird.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianDamiao/iBird/issues"
+  },
+  "homepage": "https://github.com/AdrianDamiao/iBird#readme",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
+}
