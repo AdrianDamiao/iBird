@@ -1,170 +1,281 @@
-*{
-	box-sizing: border-box;
- }
-
-body{
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
 }
 
-header{
-	background-color: #333;
-	height: 3em;
-	color: #FFF;
-	margin-bottom: 1em;
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background-color: #161719;
+    color: white;
 }
 
-header h1{
-	font-size: 2em;
-
-}
-header h2{
-	font-size: 2em;
+.container {
+    width: 40%;
+    margin: 0 auto;
 }
 
-header .container:before{
-	content: '';
-	display:inline-block;
-	height: 100%;
-	vertical-align:	middle;
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.container{
-	width: 60%;
-	height: 100%;
-	margin: 0 auto;
+.card {
+    background-color: #1f2022;
+    border-bottom: 1px solid #313133;
+    border-radius: 10px;
+    padding: 60px 60px 0px;
 }
 
-section{
-	margin: 2em 0;
-	overflow: hidden;
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-section h2{
-	margin-top: 10px;
-	font-size: 3em;
-	display: block;
-	padding-bottom: .5em;
-	border-bottom: 1px solid #ccc;
-	margin-bottom: .5em;
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-table{
-	width: 100%;
-	margin-bottom : .5em;
+.card h2 {
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+.md {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8em 0 4em;
+}
+.texto {
+    width: 50%;
+}
+
+.texto h2 {
+    margin-bottom: 0.2em;
+}
+.texto p {
+    color: #a8a8a8;
+    font-size: 1.4em;
+}
+
+section {
+    margin: 2em 0;
+    overflow: hidden;
+}
+
+section h2 {
+    color: #fff;
+    font-size: 3em;
+    display: block;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+    display: block;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 0.5em;
     table-layout: fixed;
-
+    border: 1px solid #1f2022;
+    overflow: hidden;
+    border-collapse: separate;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
-td, th {
-	padding: .7em;
-	margin: 0;
-	border: 1px solid #ccc;
-	text-align: center;
+td,
+th {
+    padding: 1em;
+    margin: 0;
+    text-align: center;
 }
 
-th{
-	font-weight: bold;
-	background-color: #EEE;
+th {
+    font-weight: bold;
+    background-color: #1f2022;
 }
 
-label{
-	color: #555;
-	display: block;
-	margin-bottom: .2em;
+tr:hover {
+    background-color: #313133;
 }
 
-.campo{
-	margin: 0;
-	padding-bottom: 1em;
-	width: 100%;
-	border: 1px solid #ccc;
-	padding: .7em;
-	width: 100%;
+label {
+    color: #a8a8a8;
+    display: block;
+    margin-bottom: 0.8em;
+    font-weight: 600;
 }
 
-.campo-medio{
-	display: inline-block;
-	padding-right: .5em;
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
 
-.grupo{
-	width: 32%;
-	display: inline-block;
-	padding: 10px 0px;
+/*input:focus:invalid {
+	border: 2px solid red;
+}*/
+
+input:focus {
+    outline: none !important;
+    border: 2px solid #725cff;
+    box-shadow: 0 0 10px #725cff;
 }
 
-button{
-	padding: .5em 2em;
-	border: 0;
-	border-bottom: 3px solid;
-	font-size: 1.2em;
-	cursor: pointer;
-	margin: 0;
-	margin-top: -3px;
-	color: #fff;
-	background-color:#0c8cd3;
-	border-color: #04324c;
-	width: 20%;
+.campo {
+    margin: 0;
+    color: #a8a8a8;
+    padding-bottom: 1em;
+    width: 100%;
+    background-color: #313133;
+    border: 1px solid #2a2b2d;
+    border-radius: 10px;
+    padding: 1.2em;
+}
+
+.campo-medio {
+    display: inline-block;
+    padding-right: 0.5em;
+}
+
+.grupo {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 4px;
+}
+
+.botao {
+    padding: 0.8em 1em;
+    border: 0;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
     display: block;
     clear: both;
-    margin: 10px 0px;
-
 }
 
-button:active{
-	margin-top:0px;
-	border: 0;
+.bto-principal {
+    color: #fff;
+    background-color: #725cff;
+    transition: 0.3s;
 }
 
-button[disabled=disabled], button:disabled {
+.bto-principal:hover {
+    background-color: #6048ff;
+}
+
+.bto-secundario {
+    color: #725cff;
+    background-color: #d1cbfc;
+    transition: 0.4s;
+}
+
+.bto-secundario:hover {
+    background-color: #dfdbfd;
+}
+
+.bto-ad {
+    padding: 0.6em 0.2em;
+    width: 20%;
+    background-color: transparent;
+    color: #725cff;
+    transition: 0.4s;
+}
+
+.bto-ad:hover {
+    background-color: #dad0e4;
+    color: #725cff;
+}
+
+button:active {
+    margin-top: -3px;
+    border: 0;
+}
+
+button[disabled="disabled"],
+button:disabled {
     background-color: gray;
-	border-color: darkgray;
-
+    border-color: darkgray;
 }
 
-#adicionar-paciente, #buscar-paciente{
-    margin-top: 30px;
-	width: 50%;
+#adicionar-animal,
+#buscar-animal {
+    margin-top: 20px;
+    width: 26%;
 }
 
-.campo-invalido{
-	border: 1px solid red;
+.campo-invalido {
+    border: 1px solid red;
 }
 
-.paciente-invalido{
-	background-color: red;
-	font-weight: bold;
-	color: white;
+.animal-invalido {
+    background-color: red;
+    font-weight: bold;
+    color: white;
 }
 
-.removido{
-	opacity: 0;
-	transition: .5s;
+.removido {
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.busca{
-	display: flex;
-	align-items: center;
+.busca {
+    display: flex;
+    align-items: center;
 
-	top: 30px; 
+    top: 30px;
+    padding: 0px 0px 40px;
 }
 
-.busca input{
-	margin: 10px;
+.busca input {
+    color: #a8a8a8;
+    width: 100%;
+    background-color: #1f2022;
+    border: 1px solid #1f2022;
+    border-bottom: 1px solid #313133;
+    border-radius: 10px;
+    padding: 1em;
 }
 
-.invisivel{
-	display: none;
+.invisivel {
+    display: none;
 }
 
-.botoes{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+.botoes {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px 4px 60px 0px;
+    border-top: 1px solid #313133;
+    margin-top: 36px;
 }
 
-.botoes button{
-	margin-right: 10px;
+.botoes button {
+    margin-left: 16px;
 }
-

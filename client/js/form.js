@@ -1,13 +1,14 @@
+import { api } from "./server";
+
 function getHTML(form) {
-    var paciente = {
+    var animal = {
         nome: form.nome.value,
         peso: form.peso.value,
-        altura: form.altura.value,
-        gordura: form.gordura.value,
-        imc: calculaIMC(form.peso.value, form.altura.value)
-    }
+        especie: form.especie.value,
+        idade: form.idade.value,
+    };
 
-    return paciente;
+    return animal;
 }
 
 function montaTd(dado, classe) {
@@ -19,48 +20,66 @@ function montaTd(dado, classe) {
 }
 
 function criaTabela(pacient) {
-    var pacienteTR = document.createElement("tr");
+    var animalTR = document.createElement("tr");
     var nomeTd = montaTd(pacient.nome, "info-nome");
     var pesoTd = montaTd(pacient.peso, "info-peso");
-    var alturaTd = montaTd(pacient.altura, "info-altura");
-    var gorduraTd = montaTd(pacient.gordura, "info-gordura");
-    var imcTd = montaTd(pacient.imc, "info-imc");
+    var especieTd = montaTd(pacient.especie, "info-especie");
+    var idadeTd = montaTd(pacient.idade, "info-idade");
 
-    pacienteTR.classList.add("paciente");
+    animalTR.classList.add("animal");
 
-    pacienteTR.appendChild(nomeTd);
-    pacienteTR.appendChild(pesoTd);
-    pacienteTR.appendChild(alturaTd);
-    pacienteTR.appendChild(gorduraTd);
-    pacienteTR.appendChild(imcTd);
+    animalTR.appendChild(nomeTd);
+    animalTR.appendChild(pesoTd);
+    animalTR.appendChild(especieTd);
+    animalTR.appendChild(idadeTd);
 
-    return pacienteTR;
-
+    return animalTR;
 }
 
-function montaTabela(paciente){
-    var pacienteTR = criaTabela(paciente);
-    var tabela = document.querySelector("#tabela-pacientes");
-    tabela.appendChild(pacienteTR);
+function montaTabela(animal) {
+    var animalTR = criaTabela(animal);
+    var tabela = document.querySelector("#tabela-animals");
+    tabela.appendChild(animalTR);
 }
 
-var botao = document.querySelector("#adicionar-paciente");
+var modal = document.getElementById("modal");
+var btn = document.getElementById("adicionar-botao");
+var span = document.getElementsByClassName("close")[0];
 
+btn.onclick = function () {
+    modal.style.display = "block";
+};
+
+span.onclick = function () {
+    modal.style.display = "none";
+};
+
+/*window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}*/
+
+var botao = document.querySelector("#adicionar-animal");
 
 botao.addEventListener("click", function (event) {
+  
     event.preventDefault();
+     
     var form = document.querySelector("#form-adiciona");
-    var paciente = getHTML(form);
-    var ul = document.querySelector("#erros")
+    var animal = getHTML(form);
+    var ul = document.querySelector("#erros");
 
-    var erros = validaPessoa(paciente);
+    var erros = validaPessoa(animal);
+
+    api.post('https://localhost:5001/api/aves', ave);
+
     if (erros.length > 0) {
         exibeErro(erros);
         return;
     }
-
-
-    montaTabela(paciente);
+    modal.style.display = "none";
+    montaTabela(animal);
 
     form.reset();
     ul.innerHTML = "";

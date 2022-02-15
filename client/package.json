@@ -4,8 +4,7 @@
   "description": "A aplicação permite ao usuário cadastrar e monitorar a saúde das suas aves.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "start index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

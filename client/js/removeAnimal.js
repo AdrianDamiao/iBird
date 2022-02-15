@@ -1,12 +1,12 @@
-var pacientes = document.querySelectorAll(".paciente");
+var animals = document.querySelectorAll(".animal");
 var tabela = document.querySelector("table");
 
-tabela.addEventListener("dblclick", function(){
+tabela.addEventListener("dblclick", function () {
     var evento = event.target;
     var pai = evento.parentNode;
     pai.classList.add("removido");
 
-    setTimeout(function(){
+    setTimeout(function () {
         pai.remove();
     }, 500);
 });
