@@ -1,4 +1,4 @@
-var botaoAdicionar = document.querySelector("#buscar-paciente");
+var botaoAdicionar = document.querySelector("#buscar-animal");
 
 botaoAdicionar.addEventListener("click", function (event) {
     event.preventDefault();
@@ -9,9 +9,9 @@ botaoAdicionar.addEventListener("click", function (event) {
 
     xhr.addEventListener("load", function () {
         var resposta = xhr.response;
-        var pacientes = JSON.parse(resposta);
-        pacientes.forEach(function (pacientes) {
-            montaTabela(pacientes);
+        var animals = JSON.parse(resposta);
+        animals.forEach(function (animals) {
+            montaTabela(animals);
         });
     });
 
@@ -19,6 +19,4 @@ botaoAdicionar.addEventListener("click", function (event) {
     modal.style.display = "none";
 
     xhr.send();
-
-
 });

@@ -2,24 +2,24 @@ var campoFiltro = document.querySelector("#buscar");
 
 campoFiltro.addEventListener("input", function () {
     if (this.value.length > 0) {
-        var pacientes = document.querySelectorAll(".paciente");
-        for (var i = 0; i < pacientes.length; i++) {
-            var paciente = pacientes[i];
-            var tdNome = paciente.querySelector(".info-nome");
+        var animals = document.querySelectorAll(".animal");
+        for (var i = 0; i < animals.length; i++) {
+            var animal = animals[i];
+            var tdNome = animal.querySelector(".info-nome");
             var nome = tdNome.textContent;
             var expressao = new RegExp(this.value, "i");
 
             if (expressao.test(nome)) {
-                paciente.classList.remove("invisivel");
+                animal.classList.remove("invisivel");
             } else {
-                paciente.classList.add("invisivel");
+                animal.classList.add("invisivel");
             }
         }
-    } else{
-        var pacientes = document.querySelectorAll(".paciente");
-        for(var i=0; i<pacientes.length; i++){
-            var paciente = pacientes[i];
-            paciente.classList.remove("invisivel");
+    } else {
+        var animals = document.querySelectorAll(".animal");
+        for (var i = 0; i < animals.length; i++) {
+            var animal = animals[i];
+            animal.classList.remove("invisivel");
         }
     }
 });

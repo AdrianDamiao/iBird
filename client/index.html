@@ -13,43 +13,51 @@
 
 	<main>
 		<div id="modal" class="modal">
-		<section id="adiciona-animal" class="container card">
-			<span class="close">&times;</span>
-			<h2 id="titulo-form">Adicionar novo animal</h2>
-			<ul id="erros"></ul>
-			<form id="form-adiciona">
-				<div class="grupo">
-					<label for="nome">Nome</label>
-					<input id="nome" name="nome" type="text" placeholder="Rex" class="campo">
-				</div><br>
-				<div class="grupo">
-					<label for="peso">Peso</label>
-					<input id="peso" name="peso" type="number" min="0" max="100" step="0.01" placeholder="4.00"
-						class="campo campo-medio" required>
-					<span class="validity"></span>
-				</div><br>
-				<div class="grupo">
-					<label for="especie">Espécie</label>
-					<input id="especie" name="especie" list="especies" placeholder="Gavião" class="campo campo-medio">
-					<datalist id="especies">
-						<option value="Arara">Arara</option>
-						<option value="Sabia">Sabia</option>
-						<option value="Papagaio">Papagaio</option>
-					</datalist>
-					</input>
-				</div><br>
-				<div class="grupo">
-					<label for="idade">Idade</label>
-					<input id="idade" type="number" min="0" max="100" placeholder="8" class="campo campo-medio"
-						required>
-				</div><br>
-				<div class="botoes">
-					<button id="buscar-paciente" class="botao bto-secundario">Buscar Paciente</button>
-					<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
-				</div>
+			<section id="adiciona-animal" class="container card">
+				<span class="close">&times;</span>
+				<h2 id="titulo-form">Adicionar novo animal</h2>
+				<ul id="erros"></ul>
+				<form id="form-adiciona">
+					<div class="grupo">
+						<label for="nome">Nome</label>
+						<input id="nome" name="nome" type="text" placeholder="Rex" class="campo" required>
+					</div><br>
+					<div class="grupo">
+						<label for="peso">Peso</label>
+						<input id="peso" name="peso" type="number" min="0" max="100" step="0.01" placeholder="4.00"
+							class="campo campo-medio" required>
+						<span class="validity"></span>
+					</div><br>
+					<div class="grupo">
+						<label for="especie">Espécie</label>
+						<input id="especie" name="especie" list="especies" placeholder="Gavião"
+							class="campo campo-medio" required>
+						<datalist id="especies">
+							<option value="Arara">Arara</option>
+							<option value="BeijaFlor">Beija-Flor</option>
+							<option value="Calopsita">Calopsita</option>
+							<option value="Canario">Canário</option>
+							<option value="Coruja">Coruja</option>
+							<option value="Gaviao">Gavião</option>
+							<option value="Papagaio">Papagaio</option>
+							<option value="Pardal">Pardal</option>
+							<option value="PicaPau">Pica-Pau</option>
+							<option value="Sabia">Sabiá</option>
+						</datalist>
+						</input>
+					</div><br>
+					<div class="grupo">
+						<label for="idade">Idade</label>
+						<input id="idade" type="number" min="0" max="100" placeholder="8" class="campo campo-medio"
+							required>
+					</div><br>
+					<div class="botoes">
+						<button id="buscar-animal" class="botao bto-secundario">Buscar Animal</button>
+						<button id="adicionar-animal" class="botao bto-principal">Adicionar</button>
+					</div>
 
-			</form>
-		</section>
+				</form>
+			</section>
 		</div>
 		<section class="container list">
 			<div class="md">
@@ -71,7 +79,7 @@
 						<th>Idade</th>
 					</tr>
 				</thead>
-				<tbody id="tabela-pacientes">
+				<tbody id="tabela-animals">
 
 				</tbody>
 			</table>
@@ -83,8 +91,8 @@
 
 <script src="./js/form.js"></script>
 <script src="./js/valida.js"></script>
-<script src="./js/remove-paciente.js"></script>
+<script src="./js/removeAnimal.js"></script>
 <script src="./js/filtro.js"></script>
-<script src="./js/buscaPaciente.js"></script>
+<script src="./js/buscaAnimal.js"></script>
 
 </html>

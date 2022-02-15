@@ -1,294 +1,281 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  vertical-align: baseline;
-  list-style: none;
-  border: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  background-color: #161719;
-  color: white;
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    background-color: #161719;
+    color: white;
 }
-
-/*header{
-	background-color: #333;
-	height: 3em;
-	color: #FFF;
-	margin-bottom: 1em;
-}
-
-header h1{
-	font-size: 2em;
-
-}
-header h2{
-	font-size: 2em;
-}
-
-header .container:before{
-	content: '';
-	display:inline-block;
-	height: 100%;
-	vertical-align:	middle;
-}*/
 
 .container {
-  width: 40%;
-  margin: 0 auto;
-  margin-bottom: 4em;
-  margin-top: 4em;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  padding-bottom: 0px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .card {
-  background-color: #1f2022;
-  border-bottom: 1px solid #313133;
-  border-radius: 10px;
-  padding: 60px 60px 0px;
+    background-color: #1f2022;
+    border-bottom: 1px solid #313133;
+    border-radius: 10px;
+    padding: 60px 60px 0px;
 }
 
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .card h2 {
-  margin-bottom: 1em;
-  font-size: 3em;
+    margin-bottom: 1em;
+    font-size: 3em;
 }
 .md {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8em 0 4em;
 }
 .texto {
-  margin-bottom: 0.8em;
-  width: 50%;
+    width: 50%;
 }
 
 .texto h2 {
-  margin-bottom: 0.2em;
+    margin-bottom: 0.2em;
 }
 .texto p {
-  color: #a8a8a8;
+    color: #a8a8a8;
+    font-size: 1.4em;
 }
 
 section {
-  margin: 2em 0;
-  overflow: hidden;
+    margin: 2em 0;
+    overflow: hidden;
 }
 
 section h2 {
-  color: #fff;
-  font-size: 3em;
-  display: block;
-  font-weight: 600;
-  padding-bottom: 0.2em;
-  display: block;
+    color: #fff;
+    font-size: 3em;
+    display: block;
+    font-weight: 600;
+    padding-bottom: 0.2em;
+    display: block;
 }
 
 table {
-  width: 100%;
-  margin-bottom: 0.5em;
-  table-layout: fixed;
-  border: 1px solid #1f2022;
-  overflow: hidden;
-  border-collapse: separate;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+    width: 100%;
+    margin-bottom: 0.5em;
+    table-layout: fixed;
+    border: 1px solid #1f2022;
+    overflow: hidden;
+    border-collapse: separate;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 td,
 th {
-  padding: 1em;
-  margin: 0;
-  text-align: center;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
 }
 
 th {
-  font-weight: bold;
-  background-color: #1f2022;
+    font-weight: bold;
+    background-color: #1f2022;
 }
 
 tr:hover {
-  background-color: #313133;
+    background-color: #313133;
 }
 
 label {
-  color: #a8a8a8;
-  display: block;
-  margin-bottom: 0.8em;
-  font-weight: 600;
+    color: #a8a8a8;
+    display: block;
+    margin-bottom: 0.8em;
+    font-weight: 600;
 }
 
 input[type="number"] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
+}
+
+/*input:focus:invalid {
+	border: 2px solid red;
+}*/
+
+input:focus {
+    outline: none !important;
+    border: 2px solid #725cff;
+    box-shadow: 0 0 10px #725cff;
 }
 
 .campo {
-  margin: 0;
-  color: #a8a8a8;
-  padding-bottom: 1em;
-  width: 100%;
-  background-color: #313133;
-  border: 1px solid #2a2b2d;
-  border-radius: 10px;
-  padding: 1.2em;
+    margin: 0;
+    color: #a8a8a8;
+    padding-bottom: 1em;
+    width: 100%;
+    background-color: #313133;
+    border: 1px solid #2a2b2d;
+    border-radius: 10px;
+    padding: 1.2em;
 }
 
 .campo-medio {
-  display: inline-block;
-  padding-right: 0.5em;
+    display: inline-block;
+    padding-right: 0.5em;
 }
 
 .grupo {
-  width: 100%;
-  display: inline-block;
-  padding: 10px 4px;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 4px;
 }
 
 .botao {
-  padding: 0.8em 1em;
-  border: 0;
-  border-radius: 6px;
-  font-size: 1.2em;
-  cursor: pointer;
-  margin: 0;
-  display: block;
-  clear: both;
+    padding: 0.8em 1em;
+    border: 0;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
+    display: block;
+    clear: both;
 }
 
 .bto-principal {
-  color: #fff;
-  background-color: #725cff;
-  transition: 0.3s;
+    color: #fff;
+    background-color: #725cff;
+    transition: 0.3s;
 }
 
 .bto-principal:hover {
-  background-color: #6048ff;
+    background-color: #6048ff;
 }
 
 .bto-secundario {
-  color: #725cff;
-  background-color: #d1cbfc;
-  transition: 0.4s;
+    color: #725cff;
+    background-color: #d1cbfc;
+    transition: 0.4s;
 }
 
 .bto-secundario:hover {
-  background-color: #dfdbfd;
+    background-color: #dfdbfd;
 }
 
 .bto-ad {
-  padding: 0.6em 0.2em;
-  width: 20%;
-  background-color: transparent;
-  color: #725cff;
-  transition: 0.4s;
+    padding: 0.6em 0.2em;
+    width: 20%;
+    background-color: transparent;
+    color: #725cff;
+    transition: 0.4s;
 }
 
 .bto-ad:hover {
-  background-color: #dad0e4;
-  color: #725cff;
+    background-color: #dad0e4;
+    color: #725cff;
 }
 
 button:active {
-  margin-top: -3px;
-  border: 0;
+    margin-top: -3px;
+    border: 0;
 }
 
 button[disabled="disabled"],
 button:disabled {
-  background-color: gray;
-  border-color: darkgray;
+    background-color: gray;
+    border-color: darkgray;
 }
 
-#adicionar-paciente,
-#buscar-paciente {
-  margin-top: 20px;
-  width: 26%;
+#adicionar-animal,
+#buscar-animal {
+    margin-top: 20px;
+    width: 26%;
 }
 
 .campo-invalido {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 
-.paciente-invalido {
-  background-color: red;
-  font-weight: bold;
-  color: white;
+.animal-invalido {
+    background-color: red;
+    font-weight: bold;
+    color: white;
 }
 
 .removido {
-  opacity: 0;
-  transition: 0.5s;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .busca {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 
-  top: 30px;
-  padding: 20px 2px;
+    top: 30px;
+    padding: 0px 0px 40px;
 }
 
 .busca input {
-  color: #a8a8a8;
-  width: 100%;
-  background-color: #1f2022;
-  border: 1px solid #1f2022;
-  border-bottom: 1px solid #313133;
-  border-radius: 10px;
-  padding: 1em;
+    color: #a8a8a8;
+    width: 100%;
+    background-color: #1f2022;
+    border: 1px solid #1f2022;
+    border-bottom: 1px solid #313133;
+    border-radius: 10px;
+    padding: 1em;
 }
 
 .invisivel {
-  display: none;
+    display: none;
 }
 
 .botoes {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 10px 4px 60px 0px;
-  border-top: 1px solid #313133;
-  margin-top: 36px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px 4px 60px 0px;
+    border-top: 1px solid #313133;
+    margin-top: 36px;
 }
 
 .botoes button {
-  margin-left: 16px;
+    margin-left: 16px;
 }

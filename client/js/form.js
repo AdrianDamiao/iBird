@@ -1,13 +1,12 @@
 function getHTML(form) {
-    var paciente = {
+    var animal = {
         nome: form.nome.value,
         peso: form.peso.value,
         especie: form.especie.value,
         idade: form.idade.value,
-        //imc: calculaIMC(form.peso.value, form.especie.value)
-    }
+    };
 
-    return paciente;
+    return animal;
 }
 
 function montaTd(dado, classe) {
@@ -18,44 +17,40 @@ function montaTd(dado, classe) {
     return td;
 }
 
-function criaTabela(pacient) {;
-
-    var pacienteTR = document.createElement("tr");
+function criaTabela(pacient) {
+    var animalTR = document.createElement("tr");
     var nomeTd = montaTd(pacient.nome, "info-nome");
     var pesoTd = montaTd(pacient.peso, "info-peso");
     var especieTd = montaTd(pacient.especie, "info-especie");
     var idadeTd = montaTd(pacient.idade, "info-idade");
-    //var imcTd = montaTd(pacient.imc, "info-imc");
 
-    pacienteTR.classList.add("paciente");
+    animalTR.classList.add("animal");
 
-    pacienteTR.appendChild(nomeTd);
-    pacienteTR.appendChild(pesoTd);
-    pacienteTR.appendChild(especieTd);
-    pacienteTR.appendChild(idadeTd);
-    //pacienteTR.appendChild(imcTd);
+    animalTR.appendChild(nomeTd);
+    animalTR.appendChild(pesoTd);
+    animalTR.appendChild(especieTd);
+    animalTR.appendChild(idadeTd);
 
-    return pacienteTR;
-
+    return animalTR;
 }
 
-function montaTabela(paciente){
-    var pacienteTR = criaTabela(paciente);
-    var tabela = document.querySelector("#tabela-pacientes");
-    tabela.appendChild(pacienteTR);
+function montaTabela(animal) {
+    var animalTR = criaTabela(animal);
+    var tabela = document.querySelector("#tabela-animals");
+    tabela.appendChild(animalTR);
 }
 
 var modal = document.getElementById("modal");
 var btn = document.getElementById("adicionar-botao");
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+btn.onclick = function () {
+    modal.style.display = "block";
+};
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+span.onclick = function () {
+    modal.style.display = "none";
+};
 
 /*window.onclick = function(event) {
   if (event.target == modal) {
@@ -63,23 +58,21 @@ span.onclick = function() {
   }
 }*/
 
-var botao = document.querySelector("#adicionar-paciente");
+var botao = document.querySelector("#adicionar-animal");
 
 botao.addEventListener("click", function (event) {
     event.preventDefault();
     var form = document.querySelector("#form-adiciona");
-    var paciente = getHTML(form);
-    var ul = document.querySelector("#erros")
+    var animal = getHTML(form);
+    var ul = document.querySelector("#erros");
 
-    var erros = validaPessoa(paciente);
+    var erros = validaPessoa(animal);
     if (erros.length > 0) {
         exibeErro(erros);
         return;
     }
-
-
     modal.style.display = "none";
-    montaTabela(paciente);
+    montaTabela(animal);
 
     form.reset();
     ul.innerHTML = "";
