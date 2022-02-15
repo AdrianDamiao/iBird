@@ -1,18 +1,18 @@
-function calculaIMC(peso, altura) {
-    var imc = peso / (altura * altura);
+/*function calculaIMC(peso, idade) {
+    var imc = peso / (idade * idade);
     return imc.toFixed(2);
-}
+}*/
 
 function validaP(peso) {
-    if (0 < peso && peso <= 150) {
+    if (0.00 < peso && peso <= 150.00) {
         return true;
     } else {
         return false;
     }
 }
 
-function validaH(altura) {
-    if (0 < altura && altura < 3.00) {
+function validaIdade(idade) {
+    if (0 < idade && idade < 100) {
         return true;
     } else {
         return false;
@@ -21,8 +21,8 @@ function validaH(altura) {
 
 function validaPessoa(paciente) {
     var erros = [];
-    if (!validaH(paciente.altura)) {
-        erros.push("Altura Inválida!");
+    if (!validaIdade(paciente.idade)) {
+        erros.push("Idade Inválida!");
     }  
     if (!validaP(paciente.peso)) {
         erros.push("Peso Inválido!");
@@ -30,8 +30,8 @@ function validaPessoa(paciente) {
     if(paciente.nome.length == 0){
         erros.push("Insira um nome");
     }
-    if(paciente.gordura.length == 0){
-        erros.push("Insira o percentual de gordura");
+    if(paciente.especie.length == 0){
+        erros.push("Insira uma espécie");
     }
 
     return erros;
@@ -53,14 +53,13 @@ var paciente = document.querySelectorAll(".paciente");
 for (var i = 0; i < paciente.length; i++) {
 
     var pacientes = paciente[i];
-    var tdpeso = pacientes.querySelector(".info-peso"); /* td peso */
-    var tdaltura = pacientes.querySelector(".info-altura"); /* td altura */
-    var tabelaIMC = pacientes.querySelector(".info-imc"); /* td imc */
+    var tdpeso = pacientes.querySelector(".info-peso");
+    var tdidade = pacientes.querySelector(".info-idade");
 
-    var altura = tdaltura.textContent;
+    var idade = tdidade.textContent;
     var peso = tdpeso.textContent;
-    if (!validaH(altura)) {
-        tdaltura.textContent = "Altura inválida!"
+    if (!validaIdade(idade)) {
+        tdidade.textContent = "Idade inválida!"
         pacientes.classList.add("paciente-invalido");
     }
 
@@ -68,8 +67,5 @@ for (var i = 0; i < paciente.length; i++) {
         tdpeso.textContent = "Peso inválido!";
         pacientes.classList.add("paciente-invalido");
     }
-
-    var imc = calculaIMC(peso, altura);
-    tabelaIMC.textContent = imc;
 }
 
