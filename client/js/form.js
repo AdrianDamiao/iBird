@@ -57,11 +57,11 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-window.onclick = function(event) {
+/*window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+}*/
 
 var botao = document.querySelector("#adicionar-paciente");
 
@@ -69,18 +69,18 @@ botao.addEventListener("click", function (event) {
     event.preventDefault();
     var form = document.querySelector("#form-adiciona");
     var paciente = getHTML(form);
-    var ul = document.querySelector("#erros")
+    //var ul = document.querySelector("#erros")
 
-    var erros = validaPessoa(paciente);
+    /*var erros = validaPessoa(paciente);
     if (erros.length > 0) {
         exibeErro(erros);
         return;
-    }
+    }*/
 
 
     modal.style.display = "none";
     montaTabela(paciente);
 
     form.reset();
-    ul.innerHTML = "";
+    //ul.innerHTML = "";
 });
