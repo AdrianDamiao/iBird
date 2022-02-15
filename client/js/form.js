@@ -1,3 +1,5 @@
+import { api } from "./server";
+
 function getHTML(form) {
     var animal = {
         nome: form.nome.value,
@@ -61,12 +63,17 @@ span.onclick = function () {
 var botao = document.querySelector("#adicionar-animal");
 
 botao.addEventListener("click", function (event) {
+  
     event.preventDefault();
+     
     var form = document.querySelector("#form-adiciona");
     var animal = getHTML(form);
     var ul = document.querySelector("#erros");
 
     var erros = validaPessoa(animal);
+
+    api.post('https://localhost:5001/api/aves', ave);
+
     if (erros.length > 0) {
         exibeErro(erros);
         return;
