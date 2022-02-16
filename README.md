@@ -22,7 +22,7 @@ Primeiramente você precisa instalar em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [VSCode](https://code.visualstudio.com/), [.NET SDK 5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) e também o [Docker](https://www.docker.com/products/docker-desktop) ou o [PostgreSQL](https://www.postgresql.org/) para o banco de dados.
 
 #### 🎲 Rodando o Backend
-Após fazer a instalação do SDK do .NET 5.0 siga os passos seguintes:
+Após fazer a instalação do [SDK](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) do .NET 5.0 siga os passos seguintes:
 ```powershell
 
 # Acesse a pasta do Backend
