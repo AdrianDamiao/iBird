@@ -25,7 +25,7 @@ Primeiramente você precisa instalar em sua máquina as seguintes ferramentas:
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
+$ git clone git@github.com:AdrianDamiao/iBird.git
 
 ```
 
