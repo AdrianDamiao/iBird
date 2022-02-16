@@ -19,27 +19,13 @@ Este projeto é divido em três partes:
 
 ### Pré-requisitos
 Primeiramente você precisa instalar em sua máquina as seguintes ferramentas: 
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [VSCode](https://code.visualstudio.com/), [.NET SDK 5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) e também o [Docker](https://www.docker.com/products/docker-desktop) ou o [PostgresSQL](https://www.postgresql.org/) para o banco de dados.
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [VSCode](https://code.visualstudio.com/), [.NET SDK 5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) e também o [Docker](https://www.docker.com/products/docker-desktop) ou o [PostgreSQL](https://www.postgresql.org/) para o banco de dados.
 
 #### 🎲 Criando o Banco de Dados (servidor)
 ```bash
 
 # Clone este repositório
 $ git clone git@github.com:tgmarinho/README-ecoleta.git
-
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd README-ecoleta
-
-# Vá para a pasta da aplicação Front End
-$ cd web
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run start
-
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
 ```
 
