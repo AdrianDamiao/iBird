@@ -1,5 +1,3 @@
-import { api } from "./server";
-
 function getHTML(form) {
     var animal = {
         nome: form.nome.value,
@@ -19,15 +17,17 @@ function montaTd(dado, classe) {
     return td;
 }
 
-function criaTabela(pacient) {
+function criaTabela(animal) {
     var animalTR = document.createElement("tr");
-    var nomeTd = montaTd(pacient.nome, "info-nome");
-    var pesoTd = montaTd(pacient.peso, "info-peso");
-    var especieTd = montaTd(pacient.especie, "info-especie");
-    var idadeTd = montaTd(pacient.idade, "info-idade");
+    var idTd = montaTd(animal.id, "info-id");
+    var nomeTd = montaTd(animal.nome, "info-nome");
+    var pesoTd = montaTd(animal.peso, "info-peso");
+    var especieTd = montaTd(animal.especie, "info-especie");
+    var idadeTd = montaTd(animal.idade, "info-idade");
 
     animalTR.classList.add("animal");
 
+    animalTR.appendChild(idTd);
     animalTR.appendChild(nomeTd);
     animalTR.appendChild(pesoTd);
     animalTR.appendChild(especieTd);
@@ -71,16 +71,23 @@ botao.addEventListener("click", function (event) {
     var ul = document.querySelector("#erros");
 
     var erros = validaPessoa(animal);
+    console.log(animal);
 
-    api.post('https://localhost:5001/api/aves', ave);
-
-    if (erros.length > 0) {
-        exibeErro(erros);
-        return;
-    }
-    modal.style.display = "none";
-    montaTabela(animal);
-
-    form.reset();
-    ul.innerHTML = "";
+    axios.post('https://localhost:5001/api/aves', animal)
+        .then((resposta) => {
+            animal.id = resposta.data
+           
+            if (erros.length > 0) {
+                exibeErro(erros);
+                return;
+            }
+            modal.style.display = "none";
+            montaTabela(animal);
+        
+            form.reset();
+            ul.innerHTML = "";
+        })
+        .catch((erro) => {
+            console.log('ERRO');
+        });
 });
