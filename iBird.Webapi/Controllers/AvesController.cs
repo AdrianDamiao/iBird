@@ -1,3 +1,4 @@
+using System.Linq;
 using iBird.Webapi.DTOs;
 using iBird.Webapi.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -25,9 +26,10 @@ namespace Controllers
                 _context.Aves.Add(ave);
 
                 _context.SaveChanges();
+                
+                return Ok(ave.Id);
             }
-
-            return Ok("Ave cadastrada com sucesso.");
+            return BadRequest("Algo deu errado!");
         }
 
         [HttpGet]
@@ -36,6 +38,17 @@ namespace Controllers
             var aves = _context.Aves;
 
             return Ok(aves);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(long id)
+        {
+           var aveASerRemovida = _context.Aves.Where(a => a.Id.Equals(id)).FirstOrDefault();
+
+            _context.Remove(aveASerRemovida);
+            _context.SaveChanges();
+
+            return Ok("Ave removida");
         }
     }
 }

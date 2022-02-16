@@ -29,6 +29,17 @@ namespace iBird.Webapi
         {
 
             services.AddControllers();
+            services.AddCors(options => 
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                {
+                    builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+            });
+
             services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("Default")));
             services.AddSwaggerGen(c =>
             {
@@ -48,6 +59,8 @@ namespace iBird.Webapi
                     c.RoutePrefix = string.Empty;
                 });
             }
+
+            app.UseCors("CorsPolicy");
 
             app.UseHttpsRedirection();
 

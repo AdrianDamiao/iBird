@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eTz7ndFpsGcMahjTufjMwIvbZISq5YYW7CcHHPmMXF6LP98LY9Jun5ossZPOSt5IewsQSx48nBZf0aKF12vA8A==",
+  "dgSpecHash": "KXSLL2YAvE4xBj6dMn8+gM86IEHhcB6/RywYVysEyigeUjgan15DDefqQwG1EqYnu+/8oJJeNaTnYUI1vraK7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adria\\Documents\\Github\\iBird\\iBird.Webapi\\iBird.Webapi.csproj",
+  "projectFilePath": "C:\\Users\\adria\\Documents\\GitHub\\iBird\\iBird.Webapi\\iBird.Webapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adria\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

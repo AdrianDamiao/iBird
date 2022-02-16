@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adria\\Documents\\Github\\iBird\\iBird.Webapi\\iBird.Webapi.csproj": {}
+    "C:\\Users\\adria\\Documents\\GitHub\\iBird\\iBird.Webapi\\iBird.Webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adria\\Documents\\Github\\iBird\\iBird.Webapi\\iBird.Webapi.csproj": {
+    "C:\\Users\\adria\\Documents\\GitHub\\iBird\\iBird.Webapi\\iBird.Webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adria\\Documents\\Github\\iBird\\iBird.Webapi\\iBird.Webapi.csproj",
+        "projectUniqueName": "C:\\Users\\adria\\Documents\\GitHub\\iBird\\iBird.Webapi\\iBird.Webapi.csproj",
         "projectName": "iBird.Webapi",
-        "projectPath": "C:\\Users\\adria\\Documents\\Github\\iBird\\iBird.Webapi\\iBird.Webapi.csproj",
+        "projectPath": "C:\\Users\\adria\\Documents\\GitHub\\iBird\\iBird.Webapi\\iBird.Webapi.csproj",
         "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adria\\Documents\\Github\\iBird\\iBird.Webapi\\obj\\",
+        "outputPath": "C:\\Users\\adria\\Documents\\GitHub\\iBird\\iBird.Webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config"
