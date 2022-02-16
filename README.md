@@ -31,9 +31,6 @@ cd iBird.Webapi
 dotnet run
 ```
 
-Caso você não esteja utilizando o Docker, será necessário criar uma conexão 
-com as mesmas informações presentes no arquivo `postgres.yml` com o PostgreSQL.
-
 #### 🎲 Criando o Banco de Dados (servidor)
 ```
 
@@ -43,9 +40,8 @@ git clone https://github.com/AdrianDamiao/iBird.git
 # Com o Docker e execução use o comando
 docker-compose -f .\iBird.Infra\postgres.yml up
 ```
-
 Caso você não esteja utilizando o Docker, será necessário criar uma conexão 
-com as mesmas informações presentes no arquivo postgres.yml com o PostgreSQL.
+com as mesmas informações presentes no arquivo `postgres.yml` com o PostgreSQL.
 
 Após a criação do banco, instale a ferramenta que vai gerencias as migrações do banco de dados
 ```
