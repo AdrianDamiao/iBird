@@ -1,5 +1,4 @@
 function criaTabela(ave){
-    console.log(ave.id);
     var aveTR = document.createElement("tr");
     var idTd = montaTd(ave.id, 'id');
     var nomeTd = montaTd(ave.nome, "nome");

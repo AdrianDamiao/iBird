@@ -4,8 +4,6 @@ function addTable() {
         .then((response) => {
            
             const aves = response.data;
-            console.log(aves);
-
            
             aves.forEach(function (aves) {
                 montaTabela(aves);

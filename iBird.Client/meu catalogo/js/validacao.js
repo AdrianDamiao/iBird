@@ -1,5 +1,5 @@
 function validaPeso(ave) {
-    if (ave.peso > 0 && ave.peso < 3) {
+    if (ave.peso > 0 && ave.peso < 10) {
         return true;
     } else {
         return false;
