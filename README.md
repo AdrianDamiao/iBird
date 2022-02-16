@@ -33,7 +33,6 @@ dotnet run
 
 #### 🎲 Criando o Banco de Dados (servidor)
 ```
-
 # Clone este repositório
 git clone https://github.com/AdrianDamiao/iBird.git
 
