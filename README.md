@@ -23,8 +23,7 @@ Primeiramente você precisa instalar em sua máquina as seguintes ferramentas:
 
 #### 🎲 Rodando o Backend
 Após fazer a instalação do [SDK](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) do .NET 5.0 siga os passos seguintes:
-```powershell
-
+```
 # Acesse a pasta do Backend
 cd iBird.Webapi
 
@@ -36,7 +35,7 @@ com as mesmas informações presentes no arquivo postgres.yml com o PostgreSQL.
 ```
 
 #### 🎲 Criando o Banco de Dados (servidor)
-```powershell
+```
 
 # Clone este repositório
 git clone https://github.com/AdrianDamiao/iBird.git
@@ -49,11 +48,11 @@ Caso você não esteja utilizando o Docker, será necessário criar uma conexão
 com as mesmas informações presentes no arquivo postgres.yml com o PostgreSQL.
 
 Após a criação do banco, instale a ferramenta que vai gerencias as migrações do banco de dados
-```powershell
+```
 dotnet tool install --global dotnet-ef
 ```
 Por ultimo, atualize o banco de dados
-```powershell
+```
 dotnet ef database update
 ```
 
@@ -61,11 +60,11 @@ Você pode acessar o banco de dados utilizando ferramentas como o [Beekeeper Stu
 
 #### 🎲 Rodando o Frontend
 Após instalar o [Node.js](https://nodejs.org/en/), acesse a pasta do frontend:
-```powershell
+```
 cd iBird.Client
 ```
 Faça a instalação das dependências do projeto
-```powershell
+```
 npm install
 ```
 
@@ -73,3 +72,4 @@ Com o [VSCode]() instalado, faça download da extensão [Live Server](https://ma
 
 ![image](https://user-images.githubusercontent.com/79238503/154318683-7eb0b620-92f4-4407-b10d-676ddb7b3bb0.png)
 
+Com tudo em execução, basta utilizar o sistema agora.
