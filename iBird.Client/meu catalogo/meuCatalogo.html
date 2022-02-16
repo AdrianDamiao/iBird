@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBird | Meu Catálogo</title>
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- end icon -->
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- end css -->
+</head>
+
+<body>
+    <header>
+        <img src="./assets/icone.png" alt="Logo" class="logo">
+        <!-- <p>iBird</p> -->
+        <div class="menu-bar">
+            <a href="#" class="item active">Meu Catálogo</a>
+            <a href="../catalogo/catalogoAves.html" class="item">Catálogo de Aves</a>
+        </div>
+    </header>
+    <main>
+        <h1>Meu Catálogo</h1>
+        <div class="busca">
+            <label for="filtro">Buscar: </label>
+            <input type="text" name="filtro" id="filtro" placeholder="Busca">
+        </div>
+        <div class="tabela">
+            <table id="tabela">
+                <thead>
+                    <tr class="cabecalho-tabela">
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Peso (kg)</th>
+                        <th>Espécie</th>
+                        <th id="last">Idade (anos)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="newTable" class="tabela">
+        </div>
+        <div class="add">
+            <h3>Adicionar nova ave</h3>
+            <ul id="erros"></ul>
+            <form action="" class="form" autocomplete="off">
+                <div class="formulario">
+                    <div class="trem">
+                        <label for="nome">Nome da ave:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Blu">
+                    </div>
+                    <div class="trem">
+                        <label for="peso">Peso (kg):</label>
+                        <input type="number"name="peso" placeholder="1.2">
+                    </div>
+                    <div class="trem">
+                        <label for="especie">Espécie:</label>
+                        <input type="text" placeholder="Arara Azul" name="especie">
+                    </div>
+                    <div class="trem">
+                        <label for="idade">Idade (anos):</label>
+                        <input type="text" placeholder="5" name="idade">
+                    </div>
+                </div>
+                <div class="botoes">
+                    <input type="button" class="bt botaoAtualizar" id="create" value="Atualizar" onclick="Javascript:addTable()"></input>
+                    <button class="bt botao">Adicionar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script src="./js/busca.js"></script>
+   <script src="./js/criaTabela.js"></script>
+   <script src="./js/erros.js"></script>
+   <script src="./js/form.js"></script>
+   <script src="./js/get-html.js"></script>
+   <script src="./js/montaTabela.js"></script>
+   <script src="./js/td.js"></script>
+   <script src="./js/validacao.js"></script>
+   <script src="./js/deleta.js"></script>
+   <script src="./js/atualizaTabela.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+/*import*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap');
+/*end import*/
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --musgo: #172601;
+    --oliva: #2C4001;
+    --guacamole: #88A61C;
+    --verde: #5F7316;
+    --bege: #D5D977;
+}
+
+header {
+    align-items: center;
+    background-color: var(--oliva);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    position: static;
+}
+
+header p {
+    color: #fff;
+    font-size: 2rem;
+}
+
+header .logo {
+    width: 150px;
+}
+
+header .item {
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 1.5rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+header .item:hover {
+    background-color: var(--guacamole);
+    font-weight: 700;
+}
+
+.active {
+    background-color: var(--musgo);
+
+}
+
+header .icone {
+    width: 15px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+h1 {
+    border-bottom: 2px dotted #172601;
+    font-size: 3.1rem;
+    margin: 0 15rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}

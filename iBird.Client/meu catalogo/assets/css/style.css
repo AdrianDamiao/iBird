@@ -1,0 +1,224 @@
+/*import*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap');
+/*end import*/
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --musgo: #172601;
+    --oliva: #2C4001;
+    --guacamole: #88A61C;
+    --verde: #5F7316;
+    --bege: #D5D977;
+}
+
+header{
+    align-items: center; 
+    background-color: var(--oliva);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    position: static;
+}
+
+header p{
+    color: #fff;
+    font-size: 2rem;
+}
+
+header .logo{
+    width: 150px;
+}
+
+header a{
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 1.5rem;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+header a:hover{
+    background-color: var(--guacamole);
+    font-weight: 700;
+}
+
+.active{
+    background-color: var(--musgo);
+    
+}
+
+header .icone{
+    width: 15px;
+}
+
+main{
+    background-color: var(--bege);
+    padding-bottom: 3rem;
+}
+
+h1{
+    border-bottom: 2px dotted #172601;
+    font-size: 3.1rem;
+    margin: 0 15rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.busca{
+    margin: 1rem 15rem;
+}
+
+.busca input{
+    background-color: var(--bege);
+    border-radius: 5px;
+    border-color:#172601;
+    color: #000;
+    margin-left: 3px;
+}
+
+.tabela{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    padding-bottom: 2rem;
+    width: 940px;
+}
+
+td, th {
+    font-size: 1.3rem;
+	margin: 0;
+    padding: .7em;
+	text-align: center;
+}
+
+th{
+    background-color: #88A61C;
+    color: #fff;
+}
+
+.cabecalho-tabela th:not(#last){
+    border-right: 1px solid #172601;
+}
+
+.passaro td{
+    border-right: 1px solid #172601;
+    border-left: 1px solid #172601;
+
+}
+ 
+.passaro .nome{
+     text-align: left;
+}
+
+.add{
+    margin: 0 auto;
+    width: 940px;
+}
+
+.add h3{
+    border-bottom: 1px solid var(--oliva);
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.add form{
+    background-color: var(--verde);
+    border-radius: 5px;
+}
+
+#erros{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formulario input{
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 5px;
+    padding: 3px;
+    width: 100%;
+}
+
+.trem{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.botao button{
+    background-color: var(--musgo);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 352.5px 1.1rem 352.5px;
+    padding: .5rem;
+    width: 25%;
+}
+
+.botao button:hover{
+    background-color: var(--oliva);
+    cursor: pointer;
+}
+
+.invisivel{
+    display: none;
+}
+
+.removido {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+tr:hover{
+    background-color: #bcdd44;
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--bege);
+}
+
+.botoes{
+    display:flex;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.bt {
+    padding: 1em 1.8em;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0;
+    display: block;
+    clear: both;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.botao{
+    color: #fff;
+    background-color: var(--musgo);
+    margin: 0 3.2rem 1.1rem 1.4rem;
+}
+
+.botaoAtualizar {
+    color: #000;
+    background-color: #bcdd44;
+    margin: 0 1rem 1.1rem 1.4rem;
+}
