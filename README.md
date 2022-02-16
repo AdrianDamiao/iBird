@@ -29,10 +29,10 @@ cd iBird.Webapi
 
 # Execute a API
 dotnet run
+```
 
 Caso você não esteja utilizando o Docker, será necessário criar uma conexão 
-com as mesmas informações presentes no arquivo postgres.yml com o PostgreSQL.
-```
+com as mesmas informações presentes no arquivo `postgres.yml` com o PostgreSQL.
 
 #### 🎲 Criando o Banco de Dados (servidor)
 ```
