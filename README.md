@@ -8,3 +8,39 @@ Através de um sistema interativo e inteligente de cadastro de aves, o usuário 
 
 ### __Mas como faço isso?__
 Ao acessar o site, basta preencher os dados relacionados a sua ave (Nome, Peso, Espécie e Idade), e salvá-la! Todos os dados relacionados a ela ficarão registrados e serão exibidos em um catálogo com todas as aves atualmente cadastradas no nosso sistema.
+
+## 🚀 Como executar o projeto
+Este projeto é divido em três partes:
+1. Backend (iBird.Webapi). 
+2. Frontend (iBird.Client).
+3. Banco de dados (iBird.Infra).
+
+💡Para que o Frontend funcione é necessário criar o primeiro o banco de dados e depois executar o Backend.
+
+### Pré-requisitos
+Primeiramente você precisa instalar em sua máquina as seguintes ferramentas: 
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [VSCode](https://code.visualstudio.com/), [.NET SDK 5.0](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) e também o [Docker](https://www.docker.com/products/docker-desktop) ou o [PostgresSQL](https://www.postgresql.org/) para o banco de dados.
+
+#### 🎲 Criando o Banco de Dados (servidor)
+```bash
+
+# Clone este repositório
+$ git clone git@github.com:tgmarinho/README-ecoleta.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd README-ecoleta
+
+# Vá para a pasta da aplicação Front End
+$ cd web
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
+```
+
+
