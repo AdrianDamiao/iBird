@@ -1,6 +1,8 @@
 # iBird
 ## __A rede social de sua ave favorita!__
 
+![image](https://user-images.githubusercontent.com/79238503/154380423-535f1905-ce3e-4f42-ba63-cb96b51218af.png)
+
 ### __Nossos objetivos__
 Com o objetivo de simplificar o dia a dia de criadores e observadores de aves, a aplicação permite ao usuário cadastrar e monitorar as informações delas.
 
