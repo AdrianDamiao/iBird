@@ -19,7 +19,7 @@ Ao acessar o site, basta preencher os dados relacionados a sua ave (Nome, Peso, 
 #### Diagrama de Classe Inicial
 ![image](https://user-images.githubusercontent.com/79238503/154381831-4315e671-4f8a-4aa9-a57d-b9ecf5238259.png)
 
-## 🚀 Como executar o projeto
+## 💻 Como executar o projeto
 Este projeto é divido em três partes:
 1. Backend (iBird.Webapi). 
 2. Frontend (iBird.Client).
