@@ -79,7 +79,7 @@ Com o [VSCode]() instalado, faça download da extensão [Live Server](https://ma
 
 Com tudo em execução, basta utilizar o sistema agora.
 
-## 🚀 Autores
+## 🎨 Autores
 
 <table>
   <tr>
