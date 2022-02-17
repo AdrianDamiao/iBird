@@ -69,6 +69,8 @@ Com o [VSCode]() instalado, faça download da extensão [Live Server](https://ma
 
 Com tudo em execução, basta utilizar o sistema agora.
 
+## Autores
+
 <table>
   <tr>
     <td align="center"><a href="https://www.instagram.com/adrian_damiao/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/79238503?v=4" width="100px;" alt=""/><br /><sub><b>Adrian Damião</b></sub></a><br /><a href="https://www.instagram.com/adrian_damiao/" title="Instagram">🦅</a><a href="https://github.com/AdrianDamiao" title="Github">🌐</a></td>
