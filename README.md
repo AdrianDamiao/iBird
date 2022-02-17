@@ -79,6 +79,9 @@ Com o [VSCode]() instalado, faça download da extensão [Live Server](https://ma
 
 Com tudo em execução, basta utilizar o sistema agora.
 
+## 🌎 Video explicativo no YouTube
+#### https://youtu.be/o9DtQ6D2lOc
+
 ## 🎨 Autores
 
 <table>
