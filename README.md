@@ -12,7 +12,7 @@ Através de um sistema interativo e inteligente de cadastro de aves, o usuário 
 ### __Mas como faço isso?__
 Ao acessar o site, basta preencher os dados relacionados a sua ave (Nome, Peso, Espécie e Idade), e salvá-la! Todos os dados relacionados a ela ficarão registrados e serão exibidos em um catálogo com todas as aves atualmente cadastradas no nosso sistema.
 
-## Estrutura do Projeto
+## 🚧 Estrutura do Projeto
 #### Diagrama de Classe inicial
 ![image](https://user-images.githubusercontent.com/79238503/154381831-4315e671-4f8a-4aa9-a57d-b9ecf5238259.png)
 
