@@ -5,7 +5,7 @@
 
 
 ### __Nossos objetivos__
-Com o objetivo de simplificar o dia a dia de criadores e observadores de aves, a aplicação permite ao usuário cadastrar e monitorar as informações delas.
+Com o objetivo de simplificar o dia a dia de tutores e observadores de aves, a aplicação permite ao usuário cadastrar e monitorar as informações delas.
 
 Através de um sistema interativo e inteligente de cadastro de aves, o usuário é capaz de colocar características de sua ave com o objetivo de simplificar o acesso a seus em momentos futuros, fazendo com que todas as informações essenciais de sua ave estejam catalogadas em um só lugar de fácil acesso.
 
