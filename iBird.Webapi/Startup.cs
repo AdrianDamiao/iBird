@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Services;
 
 namespace iBird.Webapi
 {
@@ -45,6 +46,8 @@ namespace iBird.Webapi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "iBird", Version = "v1" });
             });
+
+            services.AddScoped<IAveService, AveService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

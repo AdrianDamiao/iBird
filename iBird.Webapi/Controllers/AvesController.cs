@@ -2,6 +2,7 @@ using System.Linq;
 using iBird.Webapi.DTOs;
 using iBird.Webapi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Services;
 
 namespace Controllers
 {
@@ -9,11 +10,11 @@ namespace Controllers
     [Route("api/[controller]")]
     public class AvesController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IAveService _aveService;
 
-        public AvesController(ApplicationDbContext context)
+        public AvesController(IAveService aveService)
         {
-            _context = context;
+            _aveService = aveService;
         }
 
         [HttpPost]
@@ -21,34 +22,24 @@ namespace Controllers
         {
             if(inputDto != null)
             {
-                var ave = new Ave(inputDto.Nome, inputDto.Peso, inputDto.Especie, inputDto.Idade);
+                var novaAve = new Ave(inputDto.Nome, inputDto.Peso, inputDto.Especie, inputDto.Idade);
                 
-                _context.Aves.Add(ave);
-
-                _context.SaveChanges();
-                
-                return Ok(ave.Id);
+                return Ok(_aveService.Cria(novaAve));
             }
-            return BadRequest("Algo deu errado!");
+
+            return BadRequest("Não foi possível criar uma Ave!");
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            var aves = _context.Aves;
-
-            return Ok(aves);
+            return Ok(_aveService.BuscaTodos());
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
-           var aveASerRemovida = _context.Aves.Where(a => a.Id.Equals(id)).FirstOrDefault();
-
-            _context.Remove(aveASerRemovida);
-            _context.SaveChanges();
-
-            return Ok("Ave removida");
+            return Ok(_aveService.Deleta(id));
         }
     }
 }
