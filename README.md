@@ -1,8 +1,6 @@
 # iBird
 ## __A rede social de sua ave favorita!__
 
-![image](https://user-images.githubusercontent.com/79238503/154380423-535f1905-ce3e-4f42-ba63-cb96b51218af.png)
-
 ### __Nossos objetivos__
 Com o objetivo de simplificar o dia a dia de criadores e observadores de aves, a aplicação permite ao usuário cadastrar e monitorar as informações delas.
 
@@ -70,3 +68,13 @@ Com o [VSCode]() instalado, faça download da extensão [Live Server](https://ma
 ![image](https://user-images.githubusercontent.com/79238503/154318683-7eb0b620-92f4-4407-b10d-676ddb7b3bb0.png)
 
 Com tudo em execução, basta utilizar o sistema agora.
+
+<table>
+  <tr>
+    <td align="center"><a href="https://www.instagram.com/adrian_damiao/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/79238503?v=4" width="100px;" alt=""/><br /><sub><b>Adrian Damião</b></sub></a><br /><a href="https://www.instagram.com/adrian_damiao/" title="Instagram">🦅</a><a href="https://github.com/AdrianDamiao" title="Github">🌐</a></td>
+    <td align="center"><a href="https://www.instagram.com/bianeaime/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/81256287?v=4" width="100px;" alt=""/><br /><sub><b>Beatriz Neaime</b></sub></a><br /><a href="https://www.instagram.com/bianeaime/" title="Instagram">🐦</a><a href="https://github.com/BeatrizNeaime" title="Github">🌐</a></td>
+    <td align="center"><a href="https://www.instagram.com/ohiagomartins/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/57905893?v=4" width="100px;" alt=""/><br /><sub><b>Hiago Sousa</b></sub></a><br /><a href="https://www.instagram.com/ohiagomartins/" title="Instagram">🦅</a><a href="https://github.com/hiagosousa" title="Github">🌐</a></td>
+    <td align="center"><a href="https://www.instagram.com/joonata_martins/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99758646?v=4" width="100px;" alt=""/><br /><sub><b>Jônata Martins</b></sub></a><br /><a href="https://www.instagram.com/joonata_martins/" title="Instagram">🐦</a><a href="https://github.com/JonataMartins" title="Github">🌐</a></td>
+    <td align="center"><a href="https://www.instagram.com/luandvenancio/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/9398249?v=4" width="100px;" alt=""/><br /><sub><b>Luan Venancio</b></sub></a><br /><a href="https://www.instagram.com/luandvenancio/" title="Instagram">🦅</a><a href="https://github.com/luanvenancio" title="Github">🌐</a></td>   
+  </tr>
+</table>
